@@ -1,0 +1,206 @@
+/* 
+Aqui no Css, esse primeiro comando eu coloquei só para deixar esse fundo de paisagem, não interfere no projeto.
+*/
+
+body {
+ background-image : url(https://media.istockphoto.com/vectors/wonderful-morning-in-the-blue-mountains-vector-id476098860?b=1&k=6&m=476098860&s=612x612&w=0&h=upMxfuTpTMQa5TgbXWfdhdSIFH7f77WSWcG5p9dUkHw=);
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-attachment : fixed;
+}
+
+/* 
+Voltando para o botão...
+
+Aqui editamos o "justify-center", que usamos lá no HTML, esses dois primeiros comando são para deixar o botão no centro da tela.
+
+O "margin-top" será usado para deixar o botão, ou mais para cima ou mais para baixo, no meu exemplo está 200px, tente editar mudando só o número 200, assim entenderá melhor o sentido dele.
+*/
+
+.justify-center {
+  display : flex;
+  justify-content : center;
+  margin-top : 200px;
+  }
+
+/*
+Aqui vamos editar o designer do botão, só para deixa-lo mais bonito.
+*/
+
+/*
+O comando "padding" é usado para deixar um espaço interno no botão, tente editar o número 15 que eu usei de exemplo.
+
+O próximo comando é o "font-size", não deve ser novidade, é apenas o tamanho da letra.
+
+Depois temos "color" para editar a cor do texto.
+
+"background-color" é usado para mudar a cor do fundo, veja que usei um comando nele de 8 digitos, os 6 primeiros digitos são a cor em si, os 2 últimos são para editar a transparencia da cor, ou a opacidade dela, tente alterar só os dois últimos para ver, obs : o máximo é 99. Para alterar a opacidade, o código da cor tem que ser hexadecimal, tem que ter 6 digitos, se quiser pode pesquisar no google : Tabela de cores HTML.
+
+border-color é usado para mudar a cor da borda, também posso editar a opacidade dele.
+
+border-radius é usado para deixar a borda mais "redoldinha", tente alterar para entender nelhor.
+
+cursor : pointer é usado para quando colocar o mouse em cima do botão, mudar para uma mão. 
+*/
+
+button {
+  padding : 15px;
+  font-size : 20px;
+  color : #fff;
+  background-color : #4682B499;
+  border-color : #4682B4;
+  border-radius : 6px;
+  cursor : pointer;
+  } 
+/*
+Agora, vamos mudar o designer de quando você coloca o mouse em cima do botão, veja que as cores são diferentes é com esse hover, no caso button:hover que conseguimos editar isso, mesmo conceito do anterior.
+*/
+
+button:hover {
+  background-color : #ffffff50;
+  color : #00CED1;
+  border-color : #00CED1;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+*{
+}
+
+
+
+.credits {
+	color:#4682B4;
+	position: fixed;
+  text-align: center;
+  bottom:0;
+  font-size : 16px;
+  left: calc(50% - 60px);
+  background-color : #ffffff99;
+  border-radius : 5px;
+  padding : 2px;
+}
+
+.love {
+	color:rgb(255,0,0);
+	animation: fadeInOut 2s linear infinite;
+}
+
+.pulse {
+	animation: pulse .5s linear;
+}
+
+
+@keyframes fadeInOut {
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes pulse {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
